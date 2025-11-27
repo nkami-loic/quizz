@@ -14,5 +14,5 @@ export async function POST(req: Request) {
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
 
-  return NextResponse.redirect("/themes");
+  return NextResponse.redirect(new URL("/themes", req.url));
 }
