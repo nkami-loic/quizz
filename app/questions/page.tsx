@@ -27,9 +27,8 @@ export default function QuestionsPage() {
         className="bg-blue-500 text-white p-2 rounded"
         href="/questions/new"
       >
-        + Nouvelle question
+        Nouvelle question
       </Link>
-
       <ul className="mt-4 space-y-2">
         {questions.map((q) => (
           <li key={q.id} className="p-2 border rounded flex justify-between">
